@@ -1,0 +1,44 @@
+.add-items {
+
+    > h2{ 
+        color: #bb4550;
+        font-family: sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 45px;
+        position: relative;
+        left: 750px;
+        display: inline;
+    }
+
+
+
+    .items-list-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin-top: 100px;
+        gap: 50px;
+        position: relative;
+        left: 500px;
+    
+        .card {
+            text-align: center;
+            border-radius: 20px;
+            .card-img{
+                height: 400px;
+               
+            }
+    
+            .addbtn{
+                padding: 10px 20px;
+                border-radius: 20px;
+                font-size: 20px;
+                outline: none;
+                border: none;
+                background-color: #f38b1e;
+            }
+        }
+    }
+}
