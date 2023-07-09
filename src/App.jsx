@@ -32,8 +32,6 @@ function App() {
     <div className="App">
 
       <Header />
-
-      <Router>
         <Routes>
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/login" element={<Login />} />
@@ -42,8 +40,6 @@ function App() {
           <Route exact path="/payment" element={<Payment netTotal={netTotal} taxRate={taxRate} />} />
           <Route exact path="/payment-status" element={<PaymentStatus />} />
         </Routes>
-      </Router>
-      
       <Footer />
 
     </div>

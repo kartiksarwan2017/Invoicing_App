@@ -4,6 +4,41 @@
 
     h1{
         display: inline-block;
+        color: #fefffe;
     }
 
+    button{
+        padding: 10px 20px;
+        border-radius: 23px;
+        border: none;
+        outline: none;
+        margin: 0 20px;
+       
+        
+        > a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #fefffe;
+        }
+    }
+
+
+    .logoutBtn{
+        background-color: red;
+        font-size: 20px;
+        color: #fefffe;
+    }
+
+    .logoutBtn:hover{
+        background-color: crimson;
+    }
+
+
+    .nav-btn-container{
+        .nav-btn {
+            background-color: #bb4550;
+        }
+    }
+
+    
 }
