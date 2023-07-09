@@ -1,5 +1,10 @@
 import React from "react";
 import "./Footer.scss";
+import {FaFacebookSquare} from "react-icons/fa";
+import {BsTwitter} from "react-icons/bs";
+import {BsInstagram} from "react-icons/bs";
+import {BsYoutube} from "react-icons/bs";
+import {BsFillSendCheckFill} from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -42,7 +47,7 @@ const Footer = () => {
                       <div className="col-xl-4 col-lg-4 mb-50">
                           <div className="footer-widget">
                               <div className="footer-logo">
-                                  <a href="index.html"><img src="assets/images/logo.png" className="img-fluid" alt="logo" /></a>
+                                  <a href="index.html"><img src="./invoice.png" className="img-fluid" alt="logo" /></a>
                               </div>
                               <div className="footer-text">
                                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -50,10 +55,10 @@ const Footer = () => {
                               <div className="footer-social-icon">
                                   <span>Follow us</span>
                                   <ul className="social_icon">
-                                    <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#"><i className="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="/home"><FaFacebookSquare className="icons" /></a></li>
+                                    <li><a href="/home"><BsTwitter  className="icons" /></a></li>
+                                    <li><a href="/home"><BsInstagram  className="icons"  /></a></li>
+                                    <li><a href="/home"><BsYoutube  className="icons"  /></a></li>
                                 </ul>
                               </div>
                           </div>
@@ -64,15 +69,15 @@ const Footer = () => {
                                   <h3>Useful Links</h3>
                               </div>
                               <ul>
-                                  <li><a href="#">Our Team</a></li>
-                                  <li><a href="#">About Us</a></li>
-                                  <li><a href="#">Our Gallery</a></li>
-                                  <li><a href="#">Selection Process</a></li>
-                                  <li><a href="#">FAQ</a></li>
-                                  <li><a href="#">Sponsorship</a></li>
-                                  <li><a href="#">Our Policies</a></li>
-                                  <li><a href="#">Our Team</a></li>
-                                  <li><a href="#">Contact us</a></li>
+                                  <li><a href="/home">Our Team</a></li>
+                                  <li><a href="/home">About Us</a></li>
+                                  <li><a href="/home">Our Gallery</a></li>
+                                  <li><a href="/home">Selection Process</a></li>
+                                  <li><a href="/home">FAQ</a></li>
+                                  <li><a href="/home">Sponsorship</a></li>
+                                  <li><a href="/home">Our Policies</a></li>
+                                  <li><a href="/home">Our Team</a></li>
+                                  <li><a href="/home">Contact us</a></li>
                               </ul>
                           </div>
                       </div>
@@ -85,9 +90,9 @@ const Footer = () => {
                                   <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                               </div>
                               <div className="subscribe-form">
-                                  <form action="#">
+                                  <form action="/">
                                       <input type="text" placeholder="Email Address" />
-                                      <button><i className="fab fa-telegram-plane"></i></button>
+                                      <button><BsFillSendCheckFill className="sendIcon" /></button>
                                   </form>
                               </div>
                           </div>
@@ -100,7 +105,7 @@ const Footer = () => {
                   <div className="row">
                       <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                           <div className="copyright-text">
-                              <p>Copyright &copy; 2023, All Right Reserved <a href="#">Soumitra Ghosh</a></p>
+                              <p>Copyright &copy; 2023, All Right Reserved <a href="#">Invoicing PVT LTD</a></p>
                           </div>
                       </div>
                       <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">

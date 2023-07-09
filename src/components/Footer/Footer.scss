@@ -61,7 +61,7 @@
     font-size: 16px;
     margin-right: 15px;
   }
-  .footer-social-icon i {
+  .footer-social-icon li {
     height: 40px;
     width: 40px;
     text-align: center;
@@ -125,7 +125,7 @@
     border: 1px solid #ff5e14;
     top: 0;
   }
-  .subscribe-form button i {
+  .subscribe-form button .sendIcon {
     color: #fff;
     font-size: 22px;
     transform: rotate(-6deg);
@@ -174,7 +174,7 @@
     display: inline-block !important;
     width: inherit;
   }
-  .footer-social-icon .social_icon li a i {
+  .footer-social-icon .social_icon li a .icons {
     font-size: 15px;
     line-height: 39px;
   }
@@ -202,7 +202,7 @@
     border-radius: 100%;
     transition: 0.2s ease-in-out;
   }
-  .social_icon li a i {
+  .social_icon li a .icons {
     font-size: 15px;
     line-height: 20px;
   }

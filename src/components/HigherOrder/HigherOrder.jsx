@@ -81,10 +81,10 @@ const HigherOrder = (Heading, headingText) =>
 
     return (
       <>
-        <div className="login-container">
+        <div className="login-singup-container">
           {Heading && <Heading headingText={headingText} />}
 
-          <section className="form-container mb-20">
+          <section className="form-container">
             <div className="container" id="container">
               <div className="form-container sign-up-container">
                 <form onSubmit={(e) => handleRegister(e)}>
