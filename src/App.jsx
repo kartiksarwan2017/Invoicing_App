@@ -8,12 +8,23 @@ import Footer from "./components/Footer/Footer";
 import CreateInvoice from './components/CreateInvoice/CreateInvoice';
 import Payment from "./components/Payment/Payment";
 import PaymentStatus from "./components/PaymentStatus/PaymentStatus";
+import ItemList from './components/AddItems/AddItems';
+import { useState } from 'react';
 
 
 function App() {
 
-  const netTotal = localStorage.getItem('netTotal');
+  const [netTotal, setNetTotal] = useState(localStorage.getItem('netTotal'));
+  const [selectedItems, setSelectedItems] = useState(JSON.parse(localStorage.getItem('selectedItem')));
   const taxRate = localStorage.getItem('taxRate');
+
+
+  const handleAddItem = (item) => {
+
+    
+    setSelectedItems([...selectedItems, item]);
+    setNetTotal(netTotal + item.price);
+  };
 
   
   const items = [
@@ -39,6 +50,7 @@ function App() {
           <Route exact path="/new-invoice" element={<CreateInvoice />} />
           <Route exact path="/payment" element={<Payment netTotal={netTotal} taxRate={taxRate} />} />
           <Route exact path="/payment-status" element={<PaymentStatus />} />
+          <Route export path="/items-list" element={<ItemList items={items} handleAddItem={handleAddItem} />} />
         </Routes>
       <Footer />
 

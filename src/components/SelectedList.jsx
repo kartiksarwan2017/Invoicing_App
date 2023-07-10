@@ -3,6 +3,8 @@ import "./SelectedItems.scss";
 
 const SelectedList = ({selectedItems}) => {
 
+  localStorage.setItem('selectedItems', JSON.stringify(selectedItems));
+
   return (
     <div className='selectedItems'>
 

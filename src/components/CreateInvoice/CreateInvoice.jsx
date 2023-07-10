@@ -137,21 +137,21 @@ const CreateInvoice = () => {
   };
 
   return (
-    <div className="create-invoice-container">
+    <div className='create-invoice-container'>
       <h2>Create a New Invoice</h2>
       <form onSubmit={handleSubmit}>
         {/* Customer details and invoice form fields */}
         <input
           type="text"
           placeholder="Customer Name"
-          className='invoiceInput'
+          className="invoiceInput"
           value={customerName}
           onChange={(e) => setCustomerName(e.target.value)}
         />
         <input
           type="date"
           placeholder="Invoice Date"
-          className='invoiceInput'
+          className="invoiceInput"
           value={invoiceDate}
           onChange={(e) => setInvoiceDate(e.target.value)}
         />
@@ -197,7 +197,7 @@ const CreateInvoice = () => {
           <button type="submit" className='createInvoiceBtn'>Create Invoice</button>
 
           <Link to="/payment">
-        <button  className='paymentBtn'>Proceed to Payment</button>
+        <button className='paymentBtn'>Proceed to Payment</button>
       </Link>
         </div>
       </form>
