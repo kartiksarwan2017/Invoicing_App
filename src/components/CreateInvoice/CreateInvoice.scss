@@ -1,7 +1,49 @@
-.invoice-payment{
-    position: relative;
-    bottom: 1800px;
-    left: 50px;  
-    display: inline-block;
-    
+.create-invoice-container{
+
+    h2{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    form {
+
+        font-size: 20px;
+        .invoiceInput{
+            position: relative;
+            left: 20px;
+            margin-left: 20px;
+            padding: 20px;
+        }
+
+        textarea{
+            position: relative;
+            left: 50px;
+            top: 35px;
+            padding: 10px;
+            width: 300px;
+         
+
+        }
+    }
+
+    .createInvoiceBtn, .paymentBtn {
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: #bb4550;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .invoice-payment{
+        position: relative;
+        bottom: 1800px;
+        left: 50px;  
+        display: inline-block;
+        
+    }
+
 }
+

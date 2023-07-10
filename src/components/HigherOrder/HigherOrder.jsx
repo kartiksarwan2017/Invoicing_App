@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
-import { BsLinkedin } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
+import Swal from 'sweetalert2';
 import "./HigherOrder.scss";
 
 const HigherOrder = (Heading, headingText) =>
@@ -50,8 +47,21 @@ const HigherOrder = (Heading, headingText) =>
       setEmail("");
       setPassword("");
 
-      // Redirect to the login page
-      navigate("/login");
+
+      setTimeout(() => {
+        navigate("/login"); // Redirect to the dashboard page after successful login
+      }, 1000);
+
+      Swal.fire({
+        title: `User Created Sucessfully!`,
+        icon: 'success',
+        showCloseButton: true,
+        timer: 1000
+      });
+
+
+
+   
     };
 
     const handleLogin = (e) => {
@@ -66,12 +76,38 @@ const HigherOrder = (Heading, headingText) =>
         if (user.email === email && user.password === password) {
           // TODO: Perform any additional login logic (e.g., set user authentication state)
           localStorage.setItem("username", user.username);
-          navigate("/home"); // Redirect to the dashboard page after successful login
+
+
+          
+         Swal.fire({
+          title: `Logged In Sucessfully!`,
+          icon: 'success',
+          showCloseButton: true,
+          timer: 1000
+
+
+        });
+  
+        setTimeout(() => {
+          // Redirect to the login page
+        navigate("/home");
+        }, 1000);
+
         } else {
-          alert("Invalid username or password");
+          Swal.fire({
+            title: `<strong>Invalid Username or Password</strong>`,
+            icon: 'error',
+            showCloseButton: true,
+            timer: 1000
+          });
         }
       } else {
-        alert("User not found");
+        Swal.fire({
+          title: `<strong>User not Found!</strong>`,
+          icon: 'error',
+          showCloseButton: true,
+          timer: 1000
+        });
       }
 
       // Reset the form fields
