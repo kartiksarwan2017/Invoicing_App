@@ -7,7 +7,9 @@ const Home = () => {
 
   return (
     <div className='home-container'>
+      <button className="newInvoiceBtn">
       <Link to="/new-invoice">New Invoice</Link>
+      </button>
     </div>
     
   )
